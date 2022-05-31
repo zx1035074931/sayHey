@@ -19,3 +19,6 @@ export function createApp() {
   }
 }
 // #endif
+
+import uView from '@/uni_modules/uview-ui'
+Vue.use(uView)

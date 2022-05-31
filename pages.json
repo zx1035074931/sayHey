@@ -1,4 +1,8 @@
 {
+	// 如果您是通过uni_modules形式引入uView，可以忽略此配置
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
@@ -11,46 +15,45 @@
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
 		}, {
 			"path": "pages/sayCircle/sayCircle",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"tabBar": {
-		"selectedColor": "#007fd1", // 选中的文字颜色
+		"selectedColor": "#F5C142", // 选中的文字颜色
 		"backgroundColor": "#FFFFFF",
 		"color": "#ccc", // 未选中的文字颜色
 		"list": [{
-				"text": "首页",
-				"pagePath": "pages/index/index"
-				// "iconPath": "static/icon/home.png",
-				// "selectedIconPath": "static/icon/home-active.png"
-			},
-			{
-				"text": "租房",
-				"pagePath": "pages/rentHouse/rentHouse"
-				// "iconPath": "static/icon/course.png",
-				// "selectedIconPath": "static/icon/course-active.png"
-			},
-			{
-				"text": "say圈",
-				"pagePath": "pages/sayCircle/sayCircle"
-				// "iconPath": "static/icon/exam.png",
-				// "selectedIconPath": "static/icon/exam-active.png"
-			},
-
-			{
-				"text": "我的",
-				"pagePath": "pages/mine/mine"
-				// "iconPath": "static/icon/mine.png",
-				// "selectedIconPath": "static/icon/mine-active.png"
-			}
-		]
+			"text": "首页",
+			"pagePath": "pages/index/index",
+			"iconPath": "static/icon/home.png",
+			"selectedIconPath": "static/icon/home-active.png"
+		}, {
+			"text": "租房",
+			"pagePath": "pages/rentHouse/rentHouse",
+			"iconPath": "static/icon/house.png",
+			"selectedIconPath": "static/icon/house-active.png"
+		}, {
+			"text": "say圈",
+			"pagePath": "pages/sayCircle/sayCircle",
+			"iconPath": "static/icon/hey.png",
+			"selectedIconPath": "static/icon/hey-active.png"
+		}, {
+			"text": "我的",
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/icon/mine.png",
+			"selectedIconPath": "static/icon/mine-active.png"
+		}]
 	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
